@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="text-center flex flex-col items-center">
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-medium tracking-tighter mb-6 animate-fade-in">
             <span className="bg-gradient-to-b from-white to-gray-600 bg-clip-text text-transparent">
-              Hi, I'm Samarjit
+              Hi, I'm Samarjit.
             </span>
             <br />
             <span className="bg-gradient-to-b from-white to-gray-600 bg-clip-text text-transparent">
@@ -40,7 +40,7 @@ const Hero = () => {
             style={{ animationDelay: '0.4s' }}
           >
             <a
-              href="https://drive.google.com/file/d/1FMD-pDcCD0rAVPE_u1H7ef-Uvozn3oIw/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ImuxVthfqoPp3jC2iqvCqneR9VS7eUUZ/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
