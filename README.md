@@ -1,3 +1,3 @@
 
-https://samarjit-dev.vercel.app/
+https://samarjit-ui-ux.vercel.app/
 
