@@ -1,41 +1,43 @@
 import { ExternalLink, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { FaFigma } from 'react-icons/fa';
 
 const Projects = () => {
   const projects = [
+    
     {
-      title: 'SummarIQ',
-      subtitle: 'SaaS Landing Page',
+      title: 'Tecnoesis 2024',
+      subtitle: 'College Tech Fest Website',
       description:
-        'SaaS Landing page for a tool that integrates with Zoom and Google Meet to generate meeting summaries and extract actionable tasks automatically',
+        'Designed the official Tecnoesis website as part of a 5-member team, focusing on collaborative UI/UX, responsive layout, and seamless user navigation.',
       category: 'Website',
-      technologies: ['Next','Typescript', 'FramerMotion'],
-      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751256552/Screenshot_2025-06-30_093804_iphfnb.png',
-      liveUrl: 'https://summariq-landing.vercel.app/',
-      githubUrl: 'https://github.com/Samarjit25/SummarIQ-landing',
+      technologies: ['Figma', 'Framer', 'Notion', 'Spline'],
+      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1742311405/landing2_qb1d1p.png',
+      liveUrl: 'https://tecnoesis-2024.pages.dev/',
+      figmaUrl: 'https://www.figma.com/design/hr56x5nueM5JkAlsJiwAFy/Tecno?node-id=0-1&t=sn1ELQFAUqfpWZQT-1',
     },
     {
-      title: 'Kartly',
-      subtitle: 'Next-Gen Online Storefront',
+      title: 'NITS HACKS 6.0',
+      subtitle: 'College Tech Fest Website',
       description:
-        'Developed a full-stack retail platform with optimized real-time checkout and inventory systems, enhancing user engagement and reducing cart abandonment.',
+        'Designed the NITS Hacks 6.0 website UI/UX as part of a 3-member team, focusing on clarity, branding, and user flow.',
       category: 'Website',
-      technologies: ['React.js', 'TailwindCSS', 'Firebase'],
-      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751299221/Screenshot_2025-06-30_103454_wyv2qx.png',
-      liveUrl: 'https://kartly-634f2.web.app/',
-      githubUrl: 'https://github.com/Samarjit25/kartly',
+      technologies: ['Figma', 'Framer', 'Notion', 'Spline'],
+      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1742130737/nitshacks_dyuxsp.png',
+      liveUrl: 'https://nits-hacks-6-0.pages.dev/',
+      figmaUrl: 'https://www.figma.com/design/QAl0Z0ceohCRVVJxGqV3ug/NITS-HACKS-6.0?node-id=0-1&t=cVXAwDlNBB3yBZzm-1',
     },
     {
-      title: 'Luxeco',
-      subtitle: 'Interactive Fashion Booking Portal',
+      title: 'Ecommerce App',
+      subtitle: 'App Design',
       description:
-        'Engineered a responsive platform with enhanced catalog and reservation systems, improving user experience, engagement, and operational efficiency.',
-      category: 'Website',
-      technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
-      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751299228/Screenshot_2025-06-30_212908_fejiqc.png',
-      liveUrl: 'https://luxeeco-fashion.netlify.app/',
-      githubUrl: 'https://github.com/Samarjit25/Luxeco-Website',
+        'Designed the UI/UX for a modern e-commerce app, emphasizing intuitive navigation and a seamless shopping experience.',
+      category: 'App',
+      technologies: ['Figma', 'Notion', 'Pinterest', 'Dribble'],
+      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751355905/ecom_bdc7o5.png',
+      liveUrl: 'https://www.figma.com/design/pGNdMTEHgVn6K2ZvLnZcFF/assignment?node-id=0-1&p=f&t=RGKpeiSc1qyjWafP-0',
+      figmaUrl: 'https://www.figma.com/design/pGNdMTEHgVn6K2ZvLnZcFF/assignment?node-id=0-1&p=f&t=RGKpeiSc1qyjWafP-0',
     },
     
   ];
@@ -111,7 +113,7 @@ const Projects = () => {
                     </Button>
                   </a>
                   <a
-                    href={project.githubUrl}
+                    href={project.figmaUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1"
@@ -121,8 +123,9 @@ const Projects = () => {
                       size="sm"
                       className="w-full bg-gray-800/50 border border-gray-700 text-white transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 hover:bg-gray-100 hover:text-black hover:border-gray-300"
                     >
-                      <Github size={16} className="mr-2" />
-                      GitHub
+                      <FaFigma className="w-4 h-4 mr-2" />
+                        Figma Design
+
                     </Button>
                   </a>
                 </div>

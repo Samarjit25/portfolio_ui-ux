@@ -3,78 +3,112 @@ import { ExternalLink, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Navigation from '@/components/Navigation';
 import { Link } from 'react-router-dom';
+import { FaFigma } from 'react-icons/fa';
 
 const ProjectsPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   const projects = [
+    
+    {
+      title: 'Tecnoesis 2024',
+      subtitle: 'College Tech Fest Website',
+      description:
+        'Designed the official Tecnoesis website as part of a 5-member team, focusing on collaborative UI/UX, responsive layout, and seamless user navigation.',
+      category: 'Website',
+      technologies: ['Figma', 'Framer', 'Notion', 'Spline'],
+      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1742311405/landing2_qb1d1p.png',
+      liveUrl: 'https://tecnoesis-2024.pages.dev/',
+      figmaUrl: 'https://www.figma.com/design/hr56x5nueM5JkAlsJiwAFy/Tecno?node-id=0-1&t=sn1ELQFAUqfpWZQT-1',
+    },
+    {
+      title: 'NITS HACKS 6.0',
+      subtitle: 'College Tech Fest Website',
+      description:
+        'Designed the NITS Hacks 6.0 website UI/UX as part of a 3-member team, focusing on clarity, branding, and user flow.',
+      category: 'Website',
+      technologies: ['Figma', 'Framer', 'Notion', 'Spline'],
+      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1742130737/nitshacks_dyuxsp.png',
+      liveUrl: 'https://nits-hacks-6-0.pages.dev/',
+      figmaUrl: 'https://www.figma.com/design/QAl0Z0ceohCRVVJxGqV3ug/NITS-HACKS-6.0?node-id=0-1&t=cVXAwDlNBB3yBZzm-1',
+    },
+    {
+      title: 'Oikyotaan 2024',
+      subtitle: 'Bengali Festival Website',
+      description:
+        'A vibrant Bengali cultural website showcasing events, traditions, and community spirit through an engaging and intuitive user experience.',
+      category: 'Website',
+      technologies: ['Figma', 'Notion', 'Pinterest', 'Dribble'],
+      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1742119700/oikyotaan_wfunl9.png',
+      liveUrl: 'https://oikyotaan24.netlify.app/',
+      figmaUrl: 'https://www.figma.com/design/OJmuMNzHVIHhoyOhOIV53k/Oikyotaan-24?node-id=742-25066&t=gFLpHWdk6sCSv0hC-1',
+    },
+    {
+      title: 'Ecommerce App',
+      subtitle: 'App Design',
+      description:
+        'Designed the UI/UX for a modern e-commerce app, emphasizing intuitive navigation and a seamless shopping experience.',
+      category: 'App',
+      technologies: ['Figma', 'Notion', 'Pinterest', 'Dribble'],
+      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751355905/ecom_bdc7o5.png',
+      liveUrl: 'https://www.figma.com/design/pGNdMTEHgVn6K2ZvLnZcFF/assignment?node-id=0-1&p=f&t=RGKpeiSc1qyjWafP-0',
+      figmaUrl: 'https://www.figma.com/design/pGNdMTEHgVn6K2ZvLnZcFF/assignment?node-id=0-1&p=f&t=RGKpeiSc1qyjWafP-0',
+    },
+    
+    {
+      title: 'NITS MUN 2024',
+      subtitle: 'NITS MUN website',
+      description:
+        'A fully designed and structured website for NITSMUN, focused on clear navigation, cohesive visuals, and an intuitive user experience.',
+      category: 'Website',
+      technologies: ['Figma', 'Notion', 'Pinterest', 'Dribble'],
+      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1742119687/nitsmun_r3seof.png',
+      liveUrl: 'https://nitsmun2023-24.vercel.app/',
+      figmaUrl: 'https://www.figma.com/design/gp71E5JuGkPxJEznQkWgRr/NITS-MUN-2023-24?node-id=0-1&t=HbgYw7hYdIHL8a5O-1',
+    },
+    {
+      title: 'InstaTube',
+      subtitle: 'Website',
+      description:'Designed the dashboard and profile page UI/UX for InstaTube, focusing on clean layout, user clarity, and streamlined interaction.',
+      category: 'Website',
+      technologies: ['Figma', 'Notion', 'Pinterest', 'Dribble'],
+      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751358705/Screenshot_2025-07-01_140123_eyubjg.png',
+      liveUrl: 'https://www.figma.com/design/OzricUg3aJdFvSnn7bIWDd/assignment?node-id=24-185&t=S0WkBELxfFyKBaZn-0',
+      figmaUrl: 'https://www.figma.com/design/OzricUg3aJdFvSnn7bIWDd/assignment?node-id=24-185&t=S0WkBELxfFyKBaZn-0',
+    },
+    {
+      title: 'NITS HACKS 7.0',
+      subtitle: 'College Tech Fest Website',
+      description:
+        'Designed and mentored the NITS Hacks 7.0 website UI/UX as part of a 7-member team, focusing on clarity, branding, and user flow.',
+      category: 'Website',
+      technologies: ['Figma', 'Framer', 'Notion', 'Spline'],
+      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751358286/Screenshot_2025-07-01_135428_j3f325.png',
+      liveUrl: 'https://nitshacks.tecnoesis.co.in/',
+      figmaUrl: 'http://www.figma.com/design/1HkpxZxr2ygBedXy5Rf0wy/NITS-HACKS-7.0?node-id=0-1&t=OlxHeJ3KE5Ehw76b-1',
+    },
+    {
+      title: 'Oikyotaan 2025',
+      subtitle: 'Bengali Festival Website',
+      description:
+        'A vibrant Bengali cultural website showcasing events, traditions, and community spirit through an engaging and intuitive user experience.',
+      category: 'Website',
+      technologies: ['Figma', 'Notion', 'Pinterest', 'Dribble'],
+      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751357611/Screenshot_2025-07-01_133254_qwvqjz.png',
+      liveUrl: 'https://oikyotaan.in/',
+      figmaUrl: 'https://www.figma.com/design/NboIZp7Kns5T1COTLASOU9/Oikyotan--UI-UX?t=ZiTVboM5NAmTxIhv-0',
+    },
     {
       title: 'SummarIQ',
       subtitle: 'SaaS Landing Page',
       description:
         'SaaS Landing page for a tool that integrates with Zoom and Google Meet to generate meeting summaries and extract actionable tasks automatically',
       category: 'Website',
-      technologies: ['Next','Typescript', 'FramerMotion'],
+      technologies: ['Figma', 'Framer', 'Notion'],
       image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751256552/Screenshot_2025-06-30_093804_iphfnb.png',
       liveUrl: 'https://summariq-landing.vercel.app/',
-      githubUrl: 'https://github.com/Samarjit25/SummarIQ-landing',
-    },
-    {
-      title: 'Kartly',
-      subtitle: 'Next-Gen Online Storefront',
-      description:
-        'Developed a full-stack retail platform with optimized real-time checkout and inventory systems, enhancing user engagement and reducing cart abandonment.',
-      category: 'Website',
-      technologies: ['React.js', 'TailwindCSS', 'Firebase'],
-      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751299221/Screenshot_2025-06-30_103454_wyv2qx.png',
-      liveUrl: 'https://kartly-634f2.web.app/',
-      githubUrl: 'https://github.com/Samarjit25/kartly',
-    },
-    {
-      title: 'Luxeco',
-      subtitle: 'Interactive Fashion Booking Portal',
-      description:
-        'Engineered a responsive platform with enhanced catalog and reservation systems, improving user experience, engagement, and operational efficiency.',
-      category: 'Website',
-      technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
-      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751299228/Screenshot_2025-06-30_212908_fejiqc.png',
-      liveUrl: 'https://luxeeco-fashion.netlify.app/',
-      githubUrl: 'https://github.com/Samarjit25/Luxeco-Website',
-    },
-    {
-      title: 'Signify',
-      subtitle: 'Interactive eSignature Website',
-      description:
-        'A lightweight e-signature platform that allows users to draw and instantly download their signatures as PNG files.',
-      category: 'Website',
-      technologies: ['HTML', 'CSS', 'Javascript', 'Canvas'],
-      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751199668/5dbac67f29f715d0f15e4349711d9338_gbznhb.jpg',
-      liveUrl: 'https://samarjit25.github.io/Signify/',
-      githubUrl: 'https://github.com/Samarjit25/Signify',
-    },
-    
-    {
-      title: 'NotifyMe',
-      subtitle: 'Reminder system',
-      description:
-        'Mini project that works as a simple reminder system where users can set custom messages and times, and a dialog box pops up to notify them at the scheduled moment.',
-      category: 'Python software',
-      technologies: ['Python', 'tkinter', 'plyer'],
-      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751199192/6ab53b881771f74222f3cc21b5965c0a_gjnw0a.jpg',
-      liveUrl: 'https://github.com/Samarjit25/Notify_Me/',
-      githubUrl: 'https://github.com/Samarjit25/Notify_Me/',
-    },
-    {
-      title: 'Weather App',
-      subtitle: 'Website',
-      description:
-        'A sleek weather app that fetches real-time weather data using the OpenWeatherMap API and displays temperature, humidity, and conditions.',
-      category: 'Website',
-      technologies: ['HTML', 'CSS', 'Javascript', 'OpenWeatherMap API'],
-      image: 'https://res.cloudinary.com/dz2mlxltd/image/upload/v1751199146/d5272910c4ccacfc46b2072dd1817ca4_ysd9cg.jpg',
-      liveUrl: 'https://samarjit25.github.io/Signify/',
-      githubUrl: 'https://github.com/Samarjit25/Signify',
+      figmaUrl: 'https://github.com/Samarjit25/SummarIQ-landing',
     },
   ];
 
@@ -155,7 +189,7 @@ const ProjectsPage = () => {
                     </Button>
                   </a>
                   <a
-                    href={project.githubUrl}
+                    href={project.figmaUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1"
@@ -165,8 +199,8 @@ const ProjectsPage = () => {
                       size="sm"
                       className="w-full bg-gray-800/50 border border-gray-700 text-white transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 hover:bg-gray-100 hover:text-black hover:border-gray-300"
                     >
-                      <Github size={16} className="mr-2" />
-                      GitHub
+                      <FaFigma className="w-4 h-4 mr-2" />
+                        Figma Design
                     </Button>
                   </a>
                 </div>

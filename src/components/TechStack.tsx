@@ -2,11 +2,11 @@ import { useRef } from 'react';
 
 const TechStack = () => {
   const technologies = [
-    'JavaScript', 'SQL', 'TypeScript', 'Python',
-    'React.js', 'Node.js', 'Express.js', 'MongoDB', 'Firebase',
-    'CSS', 'Tailwind CSS', 'Next.js',
-    'Git', 'GitHub', 'Power BI', 'Figma', 'Linux',
-    'UI/UX'
+    'Figma', 'Framer', 'Adobe XD', 'Sketch', 'Protopie',
+'User Research', 'Wireframing', 'Prototyping', 'Design Systems', 'Accessibility',
+'Responsive Design', 'Interaction Design', 'Information Architecture',
+'Usability Testing', 'Design Tokens', 'Component Libraries',
+'Heuristic Evaluation', 'Visual Design', 'UX Writing'
   ];
 
   const repeatedTech = [...technologies, ...technologies];

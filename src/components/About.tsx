@@ -17,11 +17,11 @@ const About = () => {
 
         <div className="space-y-6 text-white/90 text-base leading-normal">
           <p>
-            I'm a final year B.Tech student at NIT Silchar, majoring in Electronics and Communication Engineering. By day, I delve into circuits and signals; by night, I'm immersed in UI/UX, full-stack development, and machine learning.
+            Passionate about crafting intuitive, user-centered designs and bringing them to life through seamless digital experiences. I thrive on turning complex ideas into interfaces that feel effortless and engaging.
           </p>
 
           <p>
-            I love turning abstract ideas into tangible, interactive experiences—whether that means designing intuitive interfaces or building robust applications. Constantly curious, I thrive on learning new things, experimenting with technologies, and pushing beyond comfort zones to create solutions that are both functional and delightful.
+            I love transforming abstract concepts into intuitive, user-centered experiences—whether it's crafting seamless interfaces or mapping out smooth user flows. Driven by curiosity, I constantly explore design trends, test new tools, and iterate with purpose to create solutions that are not only visually compelling but also deeply usable.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
