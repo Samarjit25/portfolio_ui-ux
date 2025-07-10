@@ -12,8 +12,13 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen pt-20 flex items-center justify-center bg-black text-white px-4 sm:px-6 lg:px-8 overflow-hidden">
 
-      {/* 🌟 Small Center Gradient Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-radial from-pink-500/10 via-purple-600/10 to-transparent rounded-full blur-2xl opacity-50 z-0" />
+
+  <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
+                  w-[300px] h-[300px] sm:w-[500px] sm:h-[500px]
+                  bg-gradient-radial from-pink-500/10 via-purple-600/10 to-transparent
+                  rounded-full blur-2xl opacity-50 z-10" />
+
+
 
       <div className="relative z-10 max-w-7xl mx-auto w-full">
         <div className="text-center flex flex-col items-center">
